@@ -16,7 +16,16 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text("Med Friend"),
           backgroundColor: Colors.deepPurple[100],
-          leading: Icon(Icons.menu),
+          leading: IconButton(
+            onPressed: () {}, 
+            icon: Icon(Icons.menu) 
+            ),
+          actions: [
+            IconButton(
+              onPressed: () {}, 
+              icon: Icon(Icons.logout)
+              ),
+          ]
 
         ),
         body: Center(
