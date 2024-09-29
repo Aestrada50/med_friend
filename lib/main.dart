@@ -2,15 +2,7 @@ import 'package:flutter/material.dart';
 
 void main() {
   runApp(MyApp());
-
-  TextField(
-  decoration: InputDecoration(
-    labelText: 'Enter your symptoms',
-  ),
-);
-
 }
-
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -18,18 +10,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Diagnostic App',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
-        appBar: AppBar(
-          title: Text('Diagnostic App'),
-        ),
-        body: Center(
-          child: Text('Welcome to the Diagnostic App!'),
-        ),
-      ),
+        backgroundColor: Colors.blue,
+      )
     );
   }
 }
